@@ -1,0 +1,31 @@
+user_homepage:
+    path:     /
+    defaults: { _controller: UserBundle:Default:index }
+
+login:
+    path:     /login
+    defaults: { _controller: UserBundle:Security:login }
+
+panier:
+    path:     /panier
+    defaults: { _controller: UserBundle:Panier:panier }
+
+address:
+    path:     /address
+    defaults: { _controller: UserBundle:Address:address }
+
+livraison:
+    path:     /livraison
+    defaults: { _controller: UserBundle:Livraison:livraison }
+
+infos:
+    path:     /infos
+    defaults: { _controller: UserBundle:Infos:infos }
+
+signin:
+    path:     /signin
+    defaults: { _controller: UserBundle:Signin:signin }
+
+pay:
+    path:     /pay
+    defaults: { _controller: UserBundle:Pay:pay }

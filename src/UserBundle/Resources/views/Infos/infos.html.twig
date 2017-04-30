@@ -1,0 +1,35 @@
+<?php include '../layout/header.php'; ?>
+
+	<div class="container">
+		<div class="row">
+            <?php include '../layout/col-left.php'; ?>
+
+			<div class="span9">
+				<div class="row">
+
+
+					<div class="span4">
+						<h4>Moto</h4>
+						<h5>Modèle selectionné</h5>
+						<p>Chaque moto possède une description particulière. Les détails sur le site Yamaha.fr</p>
+
+						<form action="{{ path('panier', {'id' : ""}) }}">
+
+
+							<select name="qte" class="span1">
+								<option>1</option>
+							</select>
+
+							<div>
+							    <button class="btn btn-primary">Ajouter au panier</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+<?php include '../layout/footer.php'; ?>

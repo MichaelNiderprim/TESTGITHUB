@@ -1,0 +1,18 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:Article:detail{% endblock %}
+
+{% block body %}
+<div>
+  <h2>{{ article.title }}</h2>
+  <p>Par {{ article.author }} le
+  {{ article.createdAt|date("d-m-Y") }}</p>
+  <hr>
+  <div>
+    {{ article.content }}
+  </div>
+  <a href="{{ path("allArticles", {"id": article.id}) }}">
+    Retour
+  </a>
+</div>
+{% endblock %}
